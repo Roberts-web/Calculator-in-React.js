@@ -1,0 +1,24 @@
+.myButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    margin: 5px;
+    border-radius: 32px;
+    font-size: 35px;
+    padding: 0px;
+    font-weight: bold;
+    box-sizing: border-box;
+    // background-color: rgb(55, 55, 55);
+    color: rgb(15, 181, 0);
+    border: black solid 1px;
+    flex: 1;
+    cursor: pointer;
+    &:hover{
+        text-shadow: 0px 0px 15px rgb(150, 242, 89)
+    }
+    &:active{
+        text-shadow: 0px 0px 25px rgb(23, 239, 3);
+    }
+    
+}
