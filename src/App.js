@@ -42,6 +42,13 @@ function App() {
     
   }
 
+  const delLast = () => {
+    setNewText(
+      newText.slice(0, newText.length -1)
+    )
+    
+  }
+
   const delAll = () => {
     setNewText("")
     setNewResult("")
@@ -83,7 +90,7 @@ function App() {
             </div>
             <div className='row'>
               <MyButton symbol={"DEL"} handleClick={delAll} colored={dels}/>
-              <MyButton symbol={"<-"} colored={dels}/>
+              <MyButton symbol={"<-"} handleClick={delLast} colored={dels}/>
               
             </div>
             
